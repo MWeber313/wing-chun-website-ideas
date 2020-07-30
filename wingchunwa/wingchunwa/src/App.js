@@ -19,7 +19,7 @@ function App() {
         </nav>
       </header>
       <div>
-
+      {/* I think I'll stop for now */}
       </div>
       <footer>
         <p>
