@@ -7,20 +7,20 @@ class FooterBar extends React.Component {
         super(props);
     }
 
-    render() {
-    }
-        return footerItem(
 
-            'p', 'Join us on Facebook'
-            // <p>Join us on Facebook</p>
-            // <p>Follow us on Twitter</p>
-            // <p>Check us out on YouTube</p>
-            // <p>
-            //     Fei Mong Wing Chun &copy; Ed Dumancas <br/>
-            //     Website built and designed by <a href="#">Mackenzie Weber</a> 
-            // </p>
+        return (
+        <div>
+            <p>Join us on Facebook</p>
+            <p>Follow us on Twitter</p>
+            <p>Check us out on YouTube</p>
+            <p>
+                Fei Mong Wing Chun &copy; Ed Dumancas <br/>
+                Website built and designed by <a href="#">Mackenzie Weber</a> 
+            </p>
+        </div>
     )
+
 }
 
-const footerContainer = document.querySelector('#react-footer-container')
+const footerContainer = document.querySelector('react-footer-container')
 ReactDOM.render(footerItem(FooterBar), footerContainer);
