@@ -1,13 +1,13 @@
 'use strict';
 
-const footerItem = React.createElement;
+const headerItem = React.createElement;
 
-class FooterBar extends React.Component {
+class HeaderBar extends React.Component {
     constructor(props) {
         super(props);
     }
 
-
+    render() {
         return (
         <div>
             <p>Join us on Facebook</p>
@@ -19,8 +19,8 @@ class FooterBar extends React.Component {
             </p>
         </div>
     )
-
+    }
 }
 
-const footerContainer = document.querySelector('react-footer-container')
-ReactDOM.render(footerItem(FooterBar), footerContainer);
+const headerContainer = document.getElementById('header-bar-container')
+ReactDOM.render(headerItem(HeaderBar), headerContainer);
