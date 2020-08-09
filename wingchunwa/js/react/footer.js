@@ -7,6 +7,7 @@ class FooterBar extends React.Component {
         super(props);
     }
 
+    render() {
 
         return (
         <div>
@@ -18,9 +19,10 @@ class FooterBar extends React.Component {
                 Website built and designed by <a href="#">Mackenzie Weber</a> 
             </p>
         </div>
-    )
+        )
 
+    }
 }
 
-const footerContainer = document.querySelector('react-footer-container')
+const footerContainer = document.getElementById('react-footer-container')
 ReactDOM.render(footerItem(FooterBar), footerContainer);
