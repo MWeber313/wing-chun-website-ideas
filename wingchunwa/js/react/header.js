@@ -10,17 +10,19 @@ class HeaderBar extends React.Component {
     render() {
         return (
         <div>
-            <p>Join us on Facebook</p>
-            <p>Follow us on Twitter</p>
-            <p>Check us out on YouTube</p>
-            <p>
-                Fei Mong Wing Chun &copy; Ed Dumancas <br/>
-                Website built and designed by <a href="#">Mackenzie Weber</a> 
-            </p>
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="html/about.html">About Us</a>
+                <a href="html/acot.html">A Cup of Tea</a>
+                <a href="html/videos.html">Videos</a>
+                <a href="html/classes.html">Classes</a>
+                <a href="html/story.html">Sifu's Story</a>
+                <a href="html/contact.html">Contact Us</a>
+            </nav>
         </div>
     )
     }
 }
 
-const headerContainer = document.getElementById('header-bar-container')
+const headerContainer = document.getElementById('react-header-container')
 ReactDOM.render(headerItem(HeaderBar), headerContainer);
